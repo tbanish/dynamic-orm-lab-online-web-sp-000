@@ -54,7 +54,9 @@ class InteractiveRecord
     DB[:conn].execute(sql, name)
   end
 
-  
+  def self.fing_by
+    
+  end
   
   
 end
