@@ -8,7 +8,8 @@ class InteractiveRecord
   end
   
   def self.column.names
-    DB[:conn].execute
+    DB[:conn].results_as_hars = true
+    
   end
   
 end
