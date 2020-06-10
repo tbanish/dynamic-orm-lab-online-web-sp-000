@@ -8,7 +8,7 @@ class InteractiveRecord
   end
   
   def self.column.names
-    
+    DB[:conn].execute
   end
   
 end
