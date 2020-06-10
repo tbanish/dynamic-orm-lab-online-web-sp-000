@@ -64,8 +64,7 @@ class InteractiveRecord
       LIMIT 1
     SQL
     
-    DB[:conn].execute(sql, attribute)
-  
+    DB[:conn].execute(sql)
   end
   
   
