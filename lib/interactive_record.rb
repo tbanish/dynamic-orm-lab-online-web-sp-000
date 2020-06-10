@@ -20,7 +20,8 @@ class InteractiveRecord
     column_names.compact
   end
   
-  self.column_names.each do |propery, value|
+  self.column_names.each do |col_name|
+    attr_accessor 
   
 
   
