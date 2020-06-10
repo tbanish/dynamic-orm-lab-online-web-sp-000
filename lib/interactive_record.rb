@@ -59,7 +59,7 @@ class InteractiveRecord
     attribute_value = attribute.values.first
     
     sql = <<-SQL 
-      SELECT * from #{self.table}
+      SELECT * from #{self.table_name}
       WHERE #{attribute_key} = #{attribute_value}
       LIMIT 1
     SQL
