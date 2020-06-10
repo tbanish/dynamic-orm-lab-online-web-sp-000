@@ -56,7 +56,7 @@ class InteractiveRecord
 
   def self.find_by(attribute)
     self.column_names.each do |col_name|
-      attribute = col_name.to_sym
+      attribute = col_name
     
       sql = "SELECT * FROM #{self.table_name} WHERE #{attribute} = ?"
       DB[:conn].execute(sql, attribute)
