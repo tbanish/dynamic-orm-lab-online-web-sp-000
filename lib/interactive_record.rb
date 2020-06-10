@@ -54,8 +54,8 @@ class InteractiveRecord
     DB[:conn].execute(sql, name)
   end
 
-  def self.fing_by
-    
+  def self.fing_by()
+    sql = "SELECT * FROM "
   end
   
   
