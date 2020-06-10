@@ -56,7 +56,7 @@ class InteractiveRecord
 
   def self.find_by(attribute)
     attribute_key = attribute.keys.join()
-    attribute_value = attribute.value.join
+    attribute_value = attribute.value.first
     
     sql = <<-SQL 
       SELECT * from #{self.table}
