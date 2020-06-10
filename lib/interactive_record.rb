@@ -54,8 +54,9 @@ class InteractiveRecord
     DB[:conn].execute(sql, name)
   end
 
-  def self.fing_by()
-    sql = "SELECT * FROM "
+  def self.fing_by(col_name)
+    sql = "SELECT * FROM #{self.table_name} WHERE #{self.col_name} = ?"
+    DB[:conn].execute(sql, col_name)
   end
   
   
