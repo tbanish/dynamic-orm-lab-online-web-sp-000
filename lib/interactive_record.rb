@@ -10,7 +10,7 @@ class InteractiveRecord
   def self.column.names
     DB[:conn].results_as_hars = true
     
-    sql = "pragma table_info #{table_name}"
+    sql = "pragma table_info('#{table_name}')"
   end
   
 end
